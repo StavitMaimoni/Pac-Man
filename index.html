@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pacman</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <canvas id="fireworks"></canvas>
+
+    <div class="images">
+        <img id="animation" src="assets/images/animations.gif" width="140" height="20">
+        <img id="ghosts" src="assets/images/ghost.png" width="140" height="20">
+    </div>
+    <div id="game-over-modal" class="modal hidden">
+        <div class="modal-content">
+            <img src="assets/images/pacman-ghost-red.png">
+            <h1>Game Over</h1>
+            <h4>but don't give up! <br> you will win the game next time</h4>
+            <button id="restart-lose-button">Try Again</button>
+        </div>
+    </div>
+
+    <div id="game-win-modal" class="modal hidden">
+        <div class="modal-content">
+            <img src="assets/images/win-pacman.jpg">
+            <h1>winner!!</h1>
+            <h4>Congratulations, you won the game! <br> You are a Pacman champion!</h4>
+            <button id="restart-win-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="ghost.js"></script>
+    <script src="pacman.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
